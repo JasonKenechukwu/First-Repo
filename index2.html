@@ -6,16 +6,49 @@
   <title>Hello World!</title>
 </head>
 <body>
-  <nav>
-    <a href="/html/">HTML</a>
-    <a href="/css/">CSS</a>
-    <a href="/javascript/">JavaScript</a>
-    <a href="/jquery/">jQuery</a>
-  </nav>
+  <form action="">
+    A form
+  </form>
 
-  <article>
-    <h1>What are the perks of being a Web Developer?</h1>
-    <!-- Article content goes here -->
-  </article>
+  <form action="">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="first name" placeholder="Type your name here">
+
+    <label for="number">Number:</label>
+    <input type="number" id="number" name="number" value="23123456">
+
+    <label for="birth">Birth Date:</label>
+    <input type="date" id="birth" name="birthday">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <select name="" id="">
+    <option value="WebTrack">Web Track</option>
+    <option value="AITrack">AI Track</option>
+    <option value="GameTrack">Game Track</option>
+    <option value="DataScienceTrack">Data Science Track</option>
+  </select>
+
+  <!-- If you want your user to be able to include new lines (by pressing return) in their text input, you can use a <textarea> element: -->
+    <textarea name="message" id="" cols="30" rows="5">
+      Welcome to GoMyCode
+    </textarea>
+
+    <form>
+      <label>First Name:</label>
+      <input type="text" name="firstName" />
+      
+
+      <label>Last Name:</label>
+      <input type="text" name="lastName" id="lastName" />
+      
+
+      <!-- This button will submit the form, causing the page to redirect -->
+      <button type="submit">Submit Name</button>
+    </form>
 </body>
 </html>
