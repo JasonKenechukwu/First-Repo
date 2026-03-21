@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jason's Portfolio</title>
+</head>
+<body style="padding-bottom: 75px;">
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>Hello, I'm Jason</h1>
+      <p>
+        Web Developer from Lagos, Nigeria
+      </p>
+      <img src="Snapchat-1697430635.jpg" alt="Jason" width="200" height="200" style="border-radius: 50%;">
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate web developer learning at GoMyCode...
+      </p>
+
+      <!-- Add a video (example: your intro video or any free video) -->
+      <video width="600" height="338" controls>
+        <source src="your-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- OR audio if you prefer -->
+      <audio controls>
+        <source src="your-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+    </section>
+
+    <section id="work">
+      <h2>My Work</h2>
+      <ul>
+        <li>Project 1 - Portfolio Website</li>
+        <li>Project 2 - To-do List App</li>
+      </ul>
+      <!-- Add images or links to your projects -->
+      
+      <!-- OR use a table if you want to practice tables -->
+      <table border="1">
+        <tr>
+          <th>
+            Project
+          </th>
+
+          <th>
+            Description
+          </th>
+        </tr>
+      </table>
+    </section>
+
+    <section id="resume">
+      <h2>My Resume</h2>
+      <h3>
+        Education
+      </h3>
+      <ul>
+        <li>
+          GoMyCode - Web Development Bootcamp (2026)
+        </li>
+      </ul>
+
+      <h3>
+        Experience
+      </h3>
+      <ul>
+        <li>
+          Freelance Web Developer
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      
+      <form action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required> <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required> <br><br>
+        
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Your Message" required></textarea> <br><br>
+
+        <button
+          type="submit"
+          style="
+          background-color:rgb(13, 201, 123);
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          ">
+          Send Message
+        </button>
+      </form>
+  </main>
+  
+  <footer style="position: fixed; bottom: 0; width: 100%; background-color: #f1f1f1; text-align: center; padding: 10px;">
+    <p>
+      &copy; 2026 Jason's Portfolio. All rights reserved. GoMyCode Lagos.
+    </p>
+  </footer>
+</body>
+</html>
