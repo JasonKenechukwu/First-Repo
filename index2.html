@@ -5,84 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Skill</title>
   <style>
-    .box p {
-      color: red;
+    .box-1{border:none;}
+    .box-2{border:5px hidden red;}
+    .box-3{border:5px solid orange;}
+    .box-4{border:5px dashed orange;}
+    .box-5{border:5px dotted orange;}
+    .box-6{border:5px double orange;}
+    .box-7{border:5px groove orange;}
+    .box-8{border:5px ridge orange;}
+    .box-9{border:5px inset orange;}
+    .box-10{border:5px outset orange;}
+
+    div p{
+      border: 10px solid black;
+      margin: 20px;
     }
 
-    article > p {
-      font-weight: bold;
-      background-color: #333;
-      color: #fff;
-      padding: .5em;
-    }
-
-    h1 + p {
-      font-weight: bold;
-      background-color: #333;
-      color: #fff;
-      padding: .5em;
-    }
-
-    h1 ~ p {
-      font-weight: bold;
-      background-color:red;
-      color: #fff;
-      padding: .5em;
+    .elliptical{
+      border-radius: 50px / 25px;
     }
   </style>
 </head>
 <body>
   <h1>
-    Descendant Combinator:
-  </h1> <!-- The descendant combinator is typically represented by a single space character. It combines two selectors so that elements matched by the second selector are selected if they have an ancestor (parent, parent's parent, parent's parent's parent, etc.) element matching the first selector. Selectors that utilize a descendant combinator are called descendant selectors. -->
+    Border
+  </h1>
 
-  <div class="box">
-    <p>
-      Text in .box
-    </p>
-  </div>
+  <div class="box-1">none</div>
+  <div class="box-2">hidden</div>
+  <div class="box-3">solid</div>
+  <div class="box-4">dashed</div>
+  <div class="box-5">dotted</div>
+  <div class="box-6">double</div>
+  <div class="box-7">groove</div>
+  <div class="box-8">ridge</div>
+  <div class="box-9">inset</div>
+  <div class="box-10">outset</div>
+  <!-- border-style: Specifies the type of line drawn around the element, including:
 
-  <p>
-    Text outside .box
-  </p>
+solid: a solid, continuous line.
 
-  <h1>
-    Child Combinator:
-  </h1> <!-- The child combinator is represented by the greater-than sign (>). It combines two selectors so that elements matched by the second selector are selected only if they are direct children of elements matching the first selector. Selectors that utilize a child combinator are called child selectors. -->
+none (default): No line is drawn.
 
-  <article>
-    <h1>A heading</h1>
-    <p>I am a paragraph.</p>
-    <div>I am a div</div>
-    <p>I am another paragraph.</p>
-</article>
+hidden: a line is drawn, but not visible. This can be useful for adding a little extra width to an element without displaying a border.
 
-<h1>
-  Adjacent Sibling Combinator:
-</h1> <!-- The adjacent sibling selector (+) is used to select something if it is right next to another element at the same level of the hierarchy. For example, to select all <p> elements that come right after <h1> elements: -->
+dashed: a line that consists of dashes.
 
-  <article>
-    <h1>
-      A heading
-    </h1>
-    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
-            melon azuki bean garlic.
-    </p>
+dotted: a line that consists of dots.
 
-    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
-            greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
-    </p>
-  </article>
+double: adds two lines around the element
 
-  <h1>
-    General Sibling Combinator:
-  </h1> <!-- The general sibling selector (~) is used to select something if it is anywhere after another element at the same level of the hierarchy. For example, to select all <p> elements that come after <h1> elements: -->
+groove: adds a bevel based on the color value in a way that makes the element appear pressed into the document.
 
-  <article>
-    <h1>A heading</h1>
-    <p>I am a paragraph.</p>
-    <div>I am a div</div>
-    <p>I am another paragraph.</p>
-  </article>
+idge: similar to groove, but reverses the color values in a way that makes the element appear raised.
+
+inset: adds a split tone to the line that makes the element appear slightly depressed.
+
+outset: similar to inset, but reverses the colors in a way that makes the element appear slightly raised.
+-->
+
+<div>
+  <p class="elliptical">Elliptical corners</p>
+</div>
 </body>
 </html>
